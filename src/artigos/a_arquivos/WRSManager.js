@@ -1,0 +1,22 @@
+function WRSManager(){this.getActiveUser=_getActiveUser;this.login=_login;this.loginXML=_loginXML;this.logout=_logout;this.update=_update;this.createUser=_createUser;this.removeCDMCookies=_removeCDMCookies;var getUserActiveURL="/wrs/action/update/getUserActiveJSON";var logoutURL="/wrs/action/signon/logoutXML";var loginURL="/wrs/action/signon/newLogin";var loginXMLURL="/wrs/action/signon/loginXML";var updateURL="/wrs/action/update/loadUser";var createUserURL="/wrs/action/update/newUser";function _createUser(product,urls){document.location.href=createUserURL+"?site="+product.site+"&tool="+product.tool+"&url="+escape(urls.url)+"&previousurl="+escape(urls.previousurl)}function _login(product,urls){document.location.href=loginURL+"?site="+product.site+((product.tool)?"&tool="+product.tool:"")+"&url="+escape(urls.url)+((urls.previousurl)?"&previousurl="+escape(urls.previousurl):"")}function _loginXML(user,product,source){_ajax({type:"GET",url:loginXMLURL+"?tool="+product.tool+"&site="+product.site+"&userName="+user.userName+"&password="+user.password+"&stayLogged="+user.stayLogged,success:source.callback})}function _update(urls){if(document.cookie.indexOf("wrs=")<0){alert("Sua sessão expirou.");document.cookie="cdmuser="+escape("-none")+";path=/;";document.location.reload()}else{document.location.href=updateURL+"?url="+escape(urls.url)+((urls.previousurl)?"&previousurl="+escape(urls.previousurl):"")}}function _getActiveUser(source,product){try{_ajax({type:"GET",url:getUserActiveURL+"?site="+product.site+((product.tool)?"&tool="+product.tool:""),success:function(text){source.callBack(eval(text))}})}catch(err){alert("Não foi possível buscar o usuário logado: "+err.message)}}function _logout(source,params){try{_ajax({type:"GET",url:logoutURL,success:function(xml){if(xml){var dto=xml.getElementsByTagName("dto")[0];source.callBack(dto.getAttribute("status"),params)}}})}catch(err){alert("Não foi possível buscar o usuário logado: "+err.message)}}function _removeCDMCookies(domain){document.cookie="DBSESSIONID=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="cdmuser=-none;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="PID=;path=/;domain="+domain+";expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="pid=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="USER=;path=/;domain="+domain+";expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="USER=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="reducedname=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="firstname=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT";document.cookie="lastname=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT"}function _ajax(req){if(req.type==undefined){req.type="GET"}if(req.async==undefined){req.async=true}var xmlhttp=null;try{xmlhttp=new ActiveXObject("Msxml2.XMLHTTP")}catch(e){try{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP")}catch(E){xmlhttp=false}}if(!xmlhttp&&typeof XMLHttpRequest!="undefined"){xmlhttp=new XMLHttpRequest()}var isWordpress=(new RegExp("wp.[a-zA-Z0-9-]*.com.br","gi")).test(document.location.host);var url=req.url;if(isWordpress){url="/wp-admin/wrs_proxy.php?url=http://www.clicrbs.com.br"+escape(req.url)}xmlhttp.open(req.type,url,req.async);xmlhttp.onreadystatechange=function(){if(xmlhttp.readyState==4&&xmlhttp.status==200){dataType=xmlhttp.getResponseHeader("Content-Type");if(dataType.indexOf("text/xml")>=0){req.success(xmlhttp.responseXML)}else{req.success(xmlhttp.responseText)}}};try{xmlhttp.send(null)}catch(e){}}}WRSManager.instance=null;WRSManager.getInstance=function(){if(WRSManager.instance==null){WRSManager.instance=new WRSManager()}return WRSManager.instance};
+/*
+     FILE ARCHIVED ON 13:13:24 Jun 02, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:52:11 Dec 12, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 284.806
+  PetaboxLoader3.datanode: 58.198 (5)
+  CDXLines.iter: 26.108 (3)
+  RedisCDXSource: 0.68
+  exclusion.robots: 0.19
+  exclusion.robots.policy: 0.176
+  LoadShardBlock: 161.883 (3)
+  load_resource: 350.787
+  PetaboxLoader3.resolve: 258.191 (2)
+  esindex: 0.015
+*/

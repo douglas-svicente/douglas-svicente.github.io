@@ -1,0 +1,69 @@
+div#regiao-box {
+	width: 270px !important;
+	height: 150px !important;
+	text-align: center;
+	padding: 30px;
+	z-index: 9999996;
+	background: white;
+	-moz-box-shadow: 1px 3px 5px #000;
+	-webkit-box-shadow: 1px 3px 5px #000;
+	box-shadow: 1px 3px 5px #000;
+	position:absolute;
+	top:50% !important;
+	left:50% !important;
+	margin-top:-105px;
+	margin-left:-165px;
+}
+
+
+
+div#regiao-box, div#regiao-box h1, div#regiao-box a, div#regiao-box ul, div#regiao-box ul li, div#regiao-box span {
+	color: #413F40;
+	font-size: 14px;
+	font-family: Tahoma, Arial, Verdana, Helvetica, sans-serif;
+}
+
+div#regiao-box h1 {
+	font-weight: bold;
+	font-size: 1.4em;
+	margin: 20px 0;
+	text-align: center;
+}
+
+div#regiao-box ul {
+	width: 200px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+div#regiao-box ul li {
+	list-style: none;
+	background: url(/web/20140602131349im_/http://www.clicrbs.com.br/icon/seta.gif) left center no-repeat;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+div#regiao-box ul li a {text-decoration: none;}
+div#regiao-box ul li a {border-bottom: 1px solid #413F40;} 
+
+/*
+     FILE ARCHIVED ON 13:13:49 Jun 02, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:52:50 Dec 12, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 85.111
+  LoadShardBlock: 57.694 (3)
+  RedisCDXSource: 0.865
+  PetaboxLoader3.resolve: 139.583 (2)
+  esindex: 0.025
+  PetaboxLoader3.datanode: 90.506 (5)
+  CDXLines.iter: 19.068 (3)
+  exclusion.robots.policy: 0.305
+  load_resource: 183.008
+  exclusion.robots: 0.333
+*/

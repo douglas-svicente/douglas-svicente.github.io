@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="horizontal.css">
+	<title>REA - Tema: Trabalho</title>
+</head>
+
+<body>
+	<a class="skip-main" href="#content">Ir para conteúdo principal</a>
+	<a class="skip-main" href="#menu">Menu</a>
+	<nav id="menu" class="menu">
+		<div class="menu--title">
+			REA.<span class="menu--title__light">TEMA: Trabalho</span>
+		</div>
+		<a class="menu--item" href="contato.html" title="Ir para a página Contato.">Contato</a>
+		<a class="menu--item menu--item__selected" href="index-horizontal.html"
+			title="Pagina desta atividade.">Atividade</a>
+	</nav> <!-- Menu -->
+	<main id="content" class="content">
+		<form id="formulario-principal">
+			<h1 class="content--headertext">
+				Atividade 1 - Atividade de Escuta
+			</h1>
+			<p class="content--text">
+				Esta atividade possui 4 áudios. Ouça os áudios destas quatro pessoas e responda às questões.
+			</p>
+			<h2 class="content--title">
+				Lista de áudios da Atividade 1
+			</h2>
+			<ul>
+				<li>
+					<label for="audio-andrei">Andrei</label>
+					<button onclick="toggleAudioAndrei()" type="button">Executar/Pausar</button>
+					<audio id="audio-andrei">
+						<source src="src/audio/Andrei 8 - Trabalho.mp3" type="audio/mpeg" />
+						Seu navegador não suporta o recurso de áudio. Você pode acessar o áudio dentro da pasta da
+						atividade.
+					</audio>
+				</li>
+				<li>
+					<label for="audio-eric">Eric</label>
+					<button onclick="toggleAudioEric()" type="button">Executar/Pausar</button>
+					<audio id="audio-eric">
+						<source src="src/audio/Eric 8.1 - Trabalho.mp3" type="audio/mpeg" />
+						Seu navegador não suporta o recurso de áudio. Você pode acessar o áudio dentro da pasta da
+						atividade.
+					</audio>
+				</li>
+				<li>
+					<label for="audio-larissa">Larissa</label>
+					<button onclick="toggleAudioLarissa()" type="button">Executar/Pausar</button>
+					<audio id="audio-larissa">
+						<source src="src/audio/Larissa 8 - Trabalho.mp3" type="audio/mpeg" />
+						Seu navegador não suporta o recurso de áudio. Você pode acessar o áudio dentro da pasta da
+						atividade.
+					</audio>
+				</li>
+				<li>
+					<label for="audio-marisa">Marisa</label>
+					<button onclick="toggleAudioMarisa()" type="button">Executar/Pausar</button>
+					<audio id="audio-marisa">
+						<source src="src/audio/Marisa 8 - Trabalho.mp3" type="audio/mpeg" />
+						Seu navegador não suporta o recurso de áudio. Você pode acessar o áudio dentro da pasta da
+						atividade.
+					</audio>
+				</li>
+			</ul>
+			<p>Você também pode apertar SHIFT + número do áudio para executar ou pausar.</p>
+			<h2 class="content--title">
+				Lista de questões da Atividade 1
+			</h2>
+			<ol>
+				<li><label for="atividade1questao1">o que essas pessoas estão falando nos áudios?</label>
+					<input type="text" id="atividade1questao1" name="atividade1questao1"></li>
+				<li><label for="atividade1questao2">Ouça outra vez e preencha a tabela com as informações que você vai
+						ouvir.</label>
+					<input type="text" id="atividade1questao2" name="atividade1questao2"></li>
+				<li><label for="atividade1questao3">Quando alguém pergunta a você sobre o seu trabalho, como você pode
+						falar
+						sua profissão e o que você faz
+						no trabalho?</label>
+					<input type="text" id="atividade1questao3" name="atividade1questao3"></li>
+				<li><label for="atividade1questao4">O que é necessário para conseguir um emprego?</label>
+					<input type="text" id="atividade1questao4" name="atividade1questao4"></li>
+				<li><label for="atividade1questao5">Na maioria das vezes, você precisa ter um Currículo com os seus
+						dados e
+						entrega-lo em agências de emprego ou diretamente nas empresas onde você quer trabalhar. Você já
+						fez
+						um currículo?</label>
+					<input type="text" id="atividade1questao5" name="atividade1questao5"></li>
+			</ol>
+			<hr>
+			<h1 class="content--headertext">
+				Atividade 2 - Atividade de leitura
+			</h1>
+			<p>Leia agora a reportagem do Diário Catarinense sobre como elaborar um bom currículo. Após a leitura,
+				responda às perguntas abaixo. <a href="src/artigos/a.html" target="_blank">Especialistas ensinam como
+					elaborar um currículo
+					profissional sem exageros e com todas as informações essenciais</a>
+			</p>
+			<h2 class="content--title">
+				Lista de questões da Atividade 2
+			</h2>
+			<ol>
+				<li><label for="atividade2questao1">Por que, segundo Edmilson Carlos Vieira, é fundamental pesquisar e
+						conhecer a empresa
+						antes de enviar um currículo?</label>
+					<input type="text" id="atividade2questao1" name="atividade2questao1"></li>
+				<li><label for="atividade2questao2">Ainda segundo Vieira, por que é importante conhecer também o
+						processo de
+						seleção da
+						empresa?</label>
+					<input type="text" id="atividade2questao2" name="atividade2questao2"></li>
+				<li>O que os especialistas ouvidos na reportagem falam sobre os itens a seguir
+					<ol class="lower-alpha">
+						<li><label for="atividade2questao3a">cópias de certificados?</label>
+							<input type="text" id="atividade2questao3a" name="atividade2questao3a"></li>
+						<li><label for="atividade2questao3b">fotos?</label>
+							<input type="text" id="atividade2questao3b" name="atividade2questao3b"></li>
+						<li><label for="atividade2questao3c">número de páginas?</label>
+							<input type="text" id="atividade2questao3c" name="atividade2questao3c"></li>
+						<li><label for="atividade2questao3d">quantidade de informações?</label>
+							<input type="text" id="atividade2questao3d" name="atividade2questao3d"></li>
+					</ol>
+				</li>
+			</ol>
+			<hr>
+			<h1 class="content--headertext">
+				Atividade 3 - Atividade de leitura
+			</h1>
+			<p>
+				Leia a entrevista com Cezar Tegon, e responda às perguntas a seguir. <a href="src/artigos/b.html"
+					target="_blank">"O erro é não se ver como um produto na prateleira", diz o diretor da Associação
+					Brasileira de RH Cezar Tegon</a>
+			</p>
+			<h2 class="content--headertext">
+				Lista de questões da Atividade 3
+			</h2>
+			<p>
+				Assinale as afirmativas abaixo, referentes à entrevista com Cezar Tegon, como verdadeiras ou falsas
+			</p>
+			<ol>
+				<li><label for="atividade3questao1">O currículo em papel ainda é preferido pela maioria das
+						empresas</label>
+					<select type="text" id="atividade3questao1" name="atividade3questao1">
+						<option value="">Escolha uma resposta</option>
+						<option value="verdadeiro">Verdadeiro</option>
+						<option value="falso">Falso</option>
+					</select>
+				</li>
+				<li><label for="atividade3questao2">Muitas pessoas preenchem currículos pré-formatados com desleixo e
+						sem
+						atenção</label>
+					<select type="text" id="atividade3questao2" name="atividade3questao2">
+						<option value="">Escolha uma resposta</option>
+						<option value="verdadeiro">Verdadeiro</option>
+						<option value="falso">Falso</option>
+					</select>
+				</li>
+				<li><label for="atividade3questao3">Entre os problemas presentes em currículos estão erros de português,
+						falta de clareza e
+						ausência de informações.</label>
+					<select type="text" id="atividade3questao3" name="atividade3questao3">
+						<option value="">Escolha uma resposta</option>
+						<option value="verdadeiro">Verdadeiro</option>
+						<option value="falso">Falso</option>
+					</select>
+				</li>
+				<li><label for="atividade3questao4">Entre os problemas presentes em currículos estão erros de português,
+						falta de clareza e
+						ausência de informações.</label>
+					<select type="text" id="atividade3questao4" name="atividade3questao4">
+						<option value="">Escolha uma resposta</option>
+						<option value="verdadeiro">Verdadeiro</option>
+						<option value="falso">Falso</option>
+					</select>
+				</li>
+				<li><label for="atividade3questao5">Entre os problemas presentes em currículos estão erros de português,
+						falta de clareza e
+						ausência de informações.</label>
+					<select type="text" id="atividade3questao5" name="atividade3questao5">
+						<option value="">Escolha uma resposta</option>
+						<option value="verdadeiro">Verdadeiro</option>
+						<option value="falso">Falso</option>
+					</select>
+				</li>
+				<li><label for="atividade3questao6">Um currículo preenchido com desleixo causa uma má impressão no
+						empregador.</label>
+					<select type="text" id="atividade3questao6" name="atividade3questao6">
+						<option value="">Escolha uma resposta</option>
+						<option value="verdadeiro">Verdadeiro</option>
+						<option value="falso">Falso</option>
+					</select>
+				</li>
+				<li><label for="atividade3questao7">O candidato deve sentar e preencher o currículo com calma, além de
+						enviá-lo como se fosse
+						um spam.</label>
+					<select type="text" id="atividade3questao7" name="atividade3questao7">
+						<option value="">Escolha uma resposta</option>
+						<option value="verdadeiro">Verdadeiro</option>
+						<option value="falso">Falso</option>
+					</select>
+				</li>
+			</ol>
+			<hr>
+			<h1 class="content--headertext">
+				Atividade 4 - Atividade de leitura
+			</h1>
+			<p>
+				Esta atividade possui três partes.
+			</p>
+			<p>
+				Leia estes 3 modelos de currículos disponibilizados pelo site "meu curriculum" e responda às questões.
+				Os
+				modelos estão disponíveis na pasta desta atividade.
+			</p>
+			<h2 class="content--headertext">
+				Lista de questões da Atividade 4 - Parte 1
+			</h2>
+			<ol>
+				<li><label for="atividade4questao1">Quem escreve um currículo?</label>
+					<input type="text" id="atividade4questao1" name="atividade4questao1"></li>
+				<li><label for="atividade4questao2">Como e com que intenção ele é escrito?</label>
+					<input type="text" id="atividade4questao2" name="atividade4questao2"></li>
+				<li><label for="atividade4questao3">Quem lê um currículo?</label>
+					<input type="text" id="atividade4questao3" name="atividade4questao3"></li>
+				<li><label for="atividade4questao4">Como e com que intenção ele é lido?</label>
+					<input type="text" id="atividade4questao4" name="atividade4questao4"></li>
+			</ol>
+			<h2 class="content--headertext">
+				Lista de questões da Atividade 4 - Parte 2
+			</h2>
+			<p>
+				Utilizando a tabela abaixo, compare os currículos que você leu.
+			</p>
+			<section>
+				<h3>Preencha a tabela a seguir comparando os três currículos com base nos:</h3>
+				<li><label for="atividade4bquestao1">Aspectos visuais como fonte, diagramação e uso de imagens</label>
+					<input type="text" id="atividade4bquestao1" name="atividade4bquestao1"></li>
+				<li><label for="atividade4bquestao2">Seções que os compõem, como informações gerais, formação,
+						experiência</label>
+					<input type="text" id="atividade4bquestao2" name="atividade4bquestao2"></li>
+				<li><label for="atividade4bquestao3">Organização interna das seções</label>
+					<input type="text" id="atividade4bquestao3" name="atividade4bquestao3"></li>
+			</section>
+			<h2 class="content--headertext">
+				Lista de questões da Atividade 4 - Parte 3
+			</h2>
+			<p><label for="atividade4cquestao1">
+					Os currículos que você leu seguem as recomendações contidas na seção “Como elaborar um bom
+					currículo”,
+					da
+					reportagem do Diário Catarinense?</label>
+				<input type="text" id="atividade4cquestao1" name="atividade4cquestao1">
+			</p>
+			<!-- <button type="submit">Salvar respostas</button> -->
+		</form>
+	</main> <!-- Content -->
+	<footer class="license-footer">
+		<img src="./img/CC_BY-SA_3.0.png" class="cc_license"
+			alt="Creative Commons Atribuição-Compartilha-Igual 4.0 Internacional">
+		<br>
+		Este material deve ser distribuído sob a licença <a
+			href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons
+			Atribuição-Compartilha-Igual 4.0 Internacional</a>
+	</footer>
+	<script>
+		var audioAndrei = document.getElementById("audio-andrei");
+		var audioEric = document.getElementById("audio-eric");
+		var audioLarissa = document.getElementById("audio-larissa");
+		var audioMarisa = document.getElementById("audio-marisa");
+
+		document.onkeyup = function (e) {
+			if (e.code == 'Digit1') {
+				toggleAudioAndrei();
+			} else if (e.code == 'Digit2') {
+				toggleAudioEric();
+			} else if (e.code == 'Digit3') {
+				toggleAudioLarissa();
+			} else if (e.code == 'Digit4') {
+				toggleAudioMarisa();
+			}
+		}
+
+		function toggleAudioAndrei() {
+			if (audioAndrei.paused) audioAndrei.play();
+			else audioAndrei.pause();
+		}
+		function toggleAudioEric() {
+			if (audioEric.paused) audioEric.play();
+			else audioEric.pause();
+		}
+		function toggleAudioLarissa() {
+			if (audioLarissa.paused) audioLarissa.play();
+			else audioLarissa.pause();
+		}
+		function toggleAudioMarisa() {
+			if (audioMarisa.paused) audioMarisa.play();
+			else audioMarisa.pause();
+		}
+	</script>
+	<style>
+		.lower-alpha {
+			list-style-type: lower-alpha
+		}
+	</style>
+</body>
+
+</html>

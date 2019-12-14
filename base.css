@@ -1,0 +1,260 @@
+@font-face{
+	font-family: SourceSansPro-Regular;
+	src: url(./fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face{
+	font-family: SourceSansPro-SemiBold;
+	src: url(./fonts/SourceSansPro-SemiBold.otf);
+}
+
+@font-face{
+	font-family: SourceSansPro-Bold;
+	src: url(./fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face{
+	font-family: SourceSansPro-Black;
+	src: url(./fonts/SourceSansPro-Black.otf);
+}
+
+@font-face{
+	font-family: SourceSansPro-Light;
+	src: url(./fonts/SourceSansPro-Light.otf);
+}
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	display: flex;
+	word-wrap: break-word;
+	position: relative;
+}
+
+menu{
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.content--headertext{
+	font-family: SourceSansPro-Black;
+	font-size: 24px;
+	color: #000000;
+	text-align: left;
+}
+
+.content--title{
+	font-family: SourceSansPro-Bold;
+	font-size: 20px;
+	color: #000000;
+	text-align: left;
+}
+
+.content--text{
+	font-family: SourceSansPro-Regular;
+	font-size: 14px;
+	color: #000000;
+	line-height: 20px;
+	text-align: left;
+	margin-top: 1em;
+}
+
+.content hr{
+	border: none;
+	background-color: #bcbcbc;
+	height: 1px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.content li{
+	margin-bottom: 1em;
+}
+
+.content img{
+	display: block;
+	margin: 2em auto;
+}
+
+.content--subtitle{
+	font-family: SourceSansPro-SemiBold;
+	font-size: 14px;
+	color: #000000;
+	text-align: center
+}
+
+.content-card-container{
+	text-align: center;
+}
+
+.content-card{
+	border: 1px solid #90cdf0;
+	width: 209px;
+	height: 302px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 18px;
+	float: left;
+	margin-bottom: 31px;
+}
+
+.content-card--text{
+	text-align: left;
+}
+
+.content-card--title{
+	font-family: SourceSansPro-Bold;
+	font-size: 18px;
+	color: #000000;
+	line-height: 22px;
+	text-align: left;
+	height: 4em;
+	margin: 0;
+	padding: 0;
+}
+
+.content-card hr{
+	border: 0;
+	margin: 1em 0;
+	background-color: #90cdf0;
+	height: 3px;
+	width: 34px !important;
+}
+
+.link-button{
+	text-decoration: none;	
+	background-color: #288bcb;
+	border-radius: 6px;
+	border: none;
+	width: 174px;
+	height: 45px;
+	font-family: SourceSansPro-Bold;
+	font-size: 16px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 45px;
+	margin-top: 1em;
+	display: block;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.link-button:hover{
+	background-color:#90cdf0;
+}
+
+.link-button:active {
+  background-color: #90cdf0;
+  transform: translateY(4px);
+}
+
+.link-button__disabled{
+	background-color: #84898f;
+	color: #a7a7a7;
+}
+
+.vertical-image{
+	padding-left: 33px;
+	width: 300px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	margin-right: 31px;
+}
+
+.two-column{
+	padding-top: 26px;
+	display: block;
+}
+
+.two-column--text{
+	display: block;
+	margin-left: 31px;
+	overflow: hidden;
+	margin-top: 31px;
+}
+
+.video-container{
+	width: 640px;
+	padding-top: 32px;
+	margin: 0 auto;
+}
+
+.video-container--description-tab{
+	border:1px solid #288bcb;
+	box-shadow:inset 0 -1px 0 0 rgba(0,0,0,0.10);
+	width:148px;
+	height:42px;
+	float: left;
+	line-height: 42px;
+	cursor: pointer;
+	font-family: SourceSansPro-Regular;
+	text-align: center;
+	font-size: 14px;
+}
+
+.video-container--description-tab__selected{
+	background:#288bcb;
+	color: #ffffff;
+}
+
+.video-container--text-box{
+	overflow-y: scroll;
+	height: 332px;
+	width: 640px;
+	border:1px solid #bcbcbc;
+	padding-top: 1em;
+	padding-left: 1em;
+}
+
+.license-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 120px;
+	border: 1px solid #bcbcbc;
+	background: #f6f6f6;
+	font-family: SourceSansPro-Regular;
+	text-align: center;
+	font-size: 14px;
+	margin: -120px auto;
+	padding-top: 2em;
+	clear: both;
+}
+
+.cc_license {
+	height:31px;
+	width:88px;
+}
+
