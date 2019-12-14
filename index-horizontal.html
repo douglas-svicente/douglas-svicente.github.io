@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="horizontal.css">
+	<title>REA - Tema: Trabalho</title>
+</head>
+<body>
+	<a class="skip-main" href="#content">Ir para conteúdo principal</a>
+	<a class="skip-main" href="#menu">Menu</a>
+	<nav id="menu" class="menu">
+		<div class="menu--title">
+			REA.<span class="menu--title__light">TEMA: Trabalho</span>
+		</div>
+		<a class="menu--item" href="contato.html" title="Ir para a página Contato." >Contato</a>		
+		<a class="menu--item menu--item__selected" href="index-horizontal.html" title="Pagina desta atividade." >Atividade</a>
+	</nav> <!-- Menu -->
+	<main id="content" class="content">
+		<h1 class="content--headertext">
+			Atividade de Escuta - Tema: Trabalho
+		</h1>
+		<p class="content--text">
+			Esta atividade possui 4 áudios. Ouça os áudios destas quatro pessoas e responda às questões.
+		</p>
+		<hr>
+		<h1 class="content--headertext">
+			Lista de áudios
+		</h1>
+		<p class="content--text">
+			<ul>
+				<li>
+					<label for="audio-andrei">Andrei</label>
+					<button onclick="toggleAudioAndrei()" type="button">Executar/Pausar</button>
+					<audio id="audio-andrei">
+						<source src="src/audio/Andrei 8 - Trabalho.mp3" type="audio/mpeg"/>
+						Seu navegador não suporta o recurso de áudio. Você pode acessar o áudio dentro da pasta da atividade.
+					</audio>
+					<script> 
+						var audioAndrei = document.getElementById("audio-andrei"); 
+						
+						function toggleAudioAndrei() {
+							if(audioAndrei.paused) audioAndrei.play(); 
+							else audioAndrei.pause();
+						}
+					</script> 
+				</li>
+			</ul>
+		</p>
+		
+		<h2 class="content--title">
+			Destaques:
+		</h2>
+		<div class="content--text">
+			O DAINF desenvolve projetos de pesquisa e extens�o envolvendo alunos dos cursos ligados ao departamento, inicia��o
+			cient�fica e projetos de final de curso.
+			<ul>
+				<li>
+					O Departamento possui dois programas PET ligados aos seus cursos de gradua��o, com um total de 20 alunos participantes;
+				</li>
+				<li>
+					Pr�mio de Melhor Tese no XXVI SIBGRAPI. O Professor Dr. Rodrigo Minetto, do Departamento Acad�mico de Inform�tica (DAINF)
+					da Universidade Tecnol�gica Federal do Paran� (UTFPR), recebeu o pr�mio de melhor Tese de Doutorado no Workshop de Teses
+					e Disserta��es do XXVI SIBGRAPI, Conference on Graphics, Patterns and images, com o artigo "Text Recognition and 2D/3D Object Tracking",
+					sobre detec��o e rastreamento de textos em cenas urbanas. O evento aconteceu em Arequipa no peru em agosto de 2013;
+				</li>
+				<li>
+					A equipe que participa da Maratona de Programa��o promovida pela SBC/ACM foi campe� da regi�o sul na �ltima edi��o do evento (2012),
+					tendo obtido medalha de bronze na competi��o nacional;
+				</li>
+				<li>
+					Uma equipe do departamento foi campe� da competi��o nacional de Futebol de Rob�s - categoria simula��o 2D em 2011, tendo obtido a terceira
+					coloca��o no campeonato latino-americano de 2012, e participado do campeonato mundial;
+				</li>
+				<li>
+					Equipes do ensino m�dio/t�cnico, treinadas por aluno do PET obtiveram coloca��o de destaque na Olimp�ada Brasileira de Inform�tica
+					(uma medalha de ouro e uma honra ao m�rito) na edi��o de 2012.
+				</li>
+			</ul>
+			<figure>
+				<img width="640" height="360" src="./img/img1.png" alt="Estudantes em laborat�rio de inform�tica"/>
+				<figcaption class="content--subtitle">
+					Estudantes em Laborat�rio de Pesquisas. Cr�dito da Imagem: Rede TO
+				</figcaption>
+			</figure>
+		</div>
+		
+		<hr>
+		
+		<h2 class="content--title">
+			Cursos de Gradua��o:
+		</h2>
+		<div class="content-card-container content--text">
+			<div class="content-card">
+				<h3 class="content-card--title">Tecnologia em Sistemas para Internet</h3>
+				<hr>
+				<div class="content-card--text">
+					Objetiva formar profissionais nas �reas de desenvolvimen-to, ger�ncia, projeto, instala-��o e administra��o de am-bientes em redes de com...</div>
+					<a href="http://www2.dainf.ct.utfpr.edu.br/tsi" class="link-button" title="Ir para a p�gina do TSI">ver mais</a>
+				</div>
+				<div class="content-card">
+					<h3 class="content-card--title">Bacharelado em Sistemas de Informa��o</h3>
+					<hr>
+					<div class="content-card--text">
+						Curso Reconhecido pelo MEC com nota 4,0 (Muito Bom), conforme Portaria n� 407/13, publicada no DOU em 30 de agosto de 2013...
+					</div>
+					<a href="http://www2.dainf.ct.utfpr.edu.br/bsi" class="link-button" title="Ir para a p�gina do BSI">ver mais</a>
+				</div>
+				<div class="content-card">
+					<h3 class="content-card--title">Engenharia de Computa��o</h3>
+					<hr>
+					<div class="content-card--text">
+						O melhor curso de Engenha-ria de Computa��o do Brasil, segundo o MEC (Atualizado em dez/2015, de acordo com os resultados do ENADE...
+					</div>
+					<a href="http://www2.dainf.ct.utfpr.edu.br/ec" class="link-button" title="Ir para a p�gina da EC">ver mais</a>
+				</div>
+			</div>
+			<hr style="clear: left;">
+			<article>
+				<h2 class="content--title">
+					Eventos:
+				</h2>
+				<div class="content--text">
+					O departamento atrav�s de um compromisso com seus discentes e com toda a comunidade acad�mica promove eventos de extens�o periodicamente.
+				</div>
+				<div class="two-column">
+					<figure class="vertical-image">
+						<img width="300" height="400" src="./img/img2.png" alt="Palestra da Semana de Inform�tica"/>
+						<figcaption class="content--subtitle">
+							Edi��o anterior da SEMINFO
+						</figcaption>
+					</figure>
+					<div class="two-column--text">
+						<h2 class="content--title">
+							VII SEMINFO<br>Semana Acad�mica de Inform�tica da Universidade Tecnol�gica Federal do Paran� - Campus Curitiba
+						</h2>
+						<div class="content--text">
+							Nos dias 03 a 07 de maio de 2010 ocorrer� a VII SEMINFO - Semana Acad�mica de Inform�tica da Universidade Tecnol�gica Federal do Paran� - Campus Curitiba. O evento, organizado pelos alunos dos Cursos de Tecnologia em Sistemas para Internet, Engenharia de Computa��o e Bacharelado em Sistemas de Informa��o da Universidade Tecnol�gica Federal do Paran� (antigo CEFET) acontecer� no Miniaudit�rio da UTFPR. O evento, organizado pelos alunos acontecer� no Miniaudit�rio da UTFPR.
+						</div>
+						<a href="http://semanatechnologica.dainf.ct.utfpr.edu.br/" class="link-button" title="Ir para a p�gina de inscri��o.">inscreva-se</a>
+					</div>
+				</div>
+			</article>
+			<div class="video-container" style="clear: left">
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/g6Q80diA-AE"></iframe>
+				<button id="description" onclick="toDescription()" class="video-container--description-tab video-container--description-tab__selected">Descri��o</button>
+				<button id="transcription" onclick="toTranscription()" class="video-container--description-tab">Transcri��o</button>
+				<div class="video-container--text-box">
+					<h3 class="content--title">
+						Reportagem sobre a ExpoUT 2007 no Paran� TV
+					</h3>
+					<div id="tabbed-text" class="content--text">
+						Este � o texto da aba de descri��o.
+					</div>
+				</div>
+			</div>
+		</main> <!-- Content -->
+		<footer class="license-footer">
+			<img src="./img/CC_BY-SA_3.0.png" class="cc_license" alt="Creative Commons Atribui��o-Compartilha-Igual 4.0 Internacional">
+			<br>
+			Este material deve ser distribu�do sob a licen�a <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons Atribui��o-CompartilhaIgual 4.0 Internacional</a>
+		</footer>
+		<script>
+			function toDescription(){
+				descriptionDiv = document.getElementById("description")
+				transcriptionDiv = document.getElementById("transcription")
+				textWindow = document.getElementById("tabbed-text")
+				descriptionDiv.classList.add("video-container--description-tab__selected")
+				transcriptionDiv.classList.remove("video-container--description-tab__selected")
+				textWindow.innerHTML = "Este � o texto da aba de descri��o."
+			}
+			function toTranscription(){
+				descriptionDiv = document.getElementById("description")
+				transcriptionDiv = document.getElementById("transcription")
+				textWindow = document.getElementById("tabbed-text")
+				descriptionDiv.classList.remove("video-container--description-tab__selected")
+				transcriptionDiv.classList.add("video-container--description-tab__selected")
+				textWindow.innerHTML = "Este � o texto da aba de transcri��o."
+			}
+		</script>	
+	</body>
+	</html>

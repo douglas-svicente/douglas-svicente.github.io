@@ -1,0 +1,51 @@
+.menu{
+	background: #f6f6f6;
+	box-shadow:0 2px 3px 0 rgba(96,96,96,0.20);
+	min-width: 100vw;
+	height: 8vh;
+	position: absolute;
+}
+
+.menu--item{
+	font-family: SourceSansPro-SemiBold;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	padding: 0 35px;
+	cursor: pointer;
+	float: right;
+	line-height: 8vh;
+}
+
+.menu--item:hover{
+	color: #288bcb;
+}
+
+.menu--item__selected{
+	color: #288bcb;
+	border-bottom: 2px solid #288bcb;
+}
+
+.menu--title{
+	font-family: SourceSansPro-Black;
+	font-size: 36px;
+	color: #288bcb;
+	letter-spacing: 0;
+	padding-left: 36px;
+	line-height: 8vh;
+	text-align: left;
+	float: left;
+}
+
+.menu--title__light{
+	font-family: SourceSansPro-Light;
+}
+
+.content{
+	margin-left: auto;
+	margin-right: auto;
+	background: #ffffff;
+	margin-top: 14vh;
+	max-width: 60vw;
+	clear: both;
+}

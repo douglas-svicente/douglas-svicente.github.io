@@ -1,0 +1,320 @@
+/* --- */
+
+#socialNetworks {
+	position:fixed;
+	z-index:999999;
+	font-family:tahoma;
+	font-size:11px;
+	right:0;
+	width:100%;
+	height:40px;
+	bottom:0;
+	border-top:2px solid #e2e2e2;
+	background:transparent url(/web/20140602131328im_/http://www.clicrbs.com.br/icon/bg-opacity.png) top left repeat;
+}
+#socialNetworks:hover {
+	background:#fff;
+	}
+
+#socialNetworks.hide { border-left:1px solid #e2e2e2; }
+
+#socialNetworksGoogle { margin-left: 10px;width: 66px;}
+
+.openEmail {background:#fff !important;}
+.openEmail .open {border:1px solid #c7c7c7; border-bottom:1px solid #fff; margin-top:-3px; height:22px; background:#fff;}
+.openEmail #socialNetworksContent {border-top:1px solid #c7c7c7;}
+/* --- */
+
+#socialNetworksTabs {
+	margin:0 auto;
+	width:266px;
+    width:360px;
+	height:40px;
+	left:50%;
+	margin-left:-180px;
+	position:absolute;
+	z-index:1;
+}
+
+/* --- */
+
+#socialNetworksContent {
+	position:absolute;
+	color:#ccc;
+	width:100%;
+	padding:10px 0;
+	top:40px;
+}
+
+/* --- */
+
+.socialNetworksApp {
+	float:left;
+	cursor:pointer;
+	padding:10px 5px;
+	height:20px;
+}
+#socialNetworksEmail { width:55px; margin-right:15px;}
+#socialNetworksTwitter { width:105px; }
+#socialNetworksFacebook {float:left;padding:10px 5px}
+
+/* --- */
+
+.socialNetworksApp img { float:left; }
+
+/* --- */
+
+.socialNetworksApp p {
+	display:none;
+	float:left;
+	line-height:20px;
+	opacity:0.20;
+	color:#333;
+	display:block;
+}
+
+/* --- */
+
+#socialNetworksShowHide {
+	position:absolute;
+	width:19px;
+	height:19px;
+	margin:10px 15px 0;
+	cursor:pointer;
+	background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/ico-minimizar.jpg) top left no-repeat;
+	right:0;
+	top:0;
+}
+#socialNetworks.hide #socialNetworksShowHide {background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/ico-maximizar.jpg) top left no-repeat; }
+
+/* --- */
+
+.openEmail, .openFacebook {
+	background:#fff !important;
+	}
+.openEmail .open, .openFacebook .open {
+	border:1px solid #c7c7c7; 
+	border-bottom:1px solid #fff; 
+	margin-top:-3px; height:22px; 
+	background:#fff;
+	}
+.openEmail #socialNetworksContent, .openFacebook #socialNetworksContent {
+	border-top:1px solid #c7c7c7;
+	}
+
+
+/* --- */
+
+#socialNetworksContentTwitter,
+#socialNetworksContentFacebook {
+	position:relative;
+	width:100%;
+	text-align:center;
+	float:left;
+	left:0;
+	top:0;
+}
+
+#socialNetworksContentFacebook #fb-root {
+	margin: 0 auto;
+	width:480px
+}
+
+/* --- */
+
+#socialNetworksEmail span{width:55px; height:20px; background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/bt-email.png) top left no-repeat; display:block; float:left;text-indent:-9999px;}
+#socialNetworksFacebook span {width:59px;height:20px}
+#socialNetworksFacebook span {background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/bt-facebook.png) left -21px no-repeat;}
+#socialNetworksEmail span:hover, #socialNetworksFacebook span:hover, #socialNetworksEmail.open span, #socialNetworksFacebook.open span {background-position:0 top;}
+
+
+
+/* --- */
+.corpoEnviar * {padding:0; margin:0;}
+.corpoEnviar {
+	width:600px;
+	margin:0 auto;
+	font-family:tahoma;
+	}
+.corpoEnviar fieldset {
+	border:0;
+}
+.enviarCol-a, .enviarCol-b {
+	width:238px;
+	float:left;
+	display:inline;
+	}
+.enviarCol-b {
+	width:315px;
+	margin-left:47px;
+	margin-bottom:10px;
+	}
+.textoEnviar {
+	font-size:13px; 
+	color:#000;
+	margin-bottom:20px;
+	}
+.textoObrigatorio {
+	font-size:11px;
+	color:#ccc;
+	margin-bottom:10px;
+	}
+.corpoEnviar label {
+	display:block;
+	font-size:11px;
+	color:#000;
+	margin-bottom:3px;
+	}
+.corpoEnviar input, .corpoEnviar textarea {
+	width:228px;
+	}
+.corpoEnviar input {
+	border:1px solid #CACACA;
+	padding:5px 4px;
+	}
+.corpoEnviar .sNerro input, .corpoEnviar textarea.sNerro {
+	border:1px solid #FF4040;
+	background:#FFECEC;
+	color:#FF3F3F;
+	}
+.sNerro span, .sNcaptcha span, span.sNerro {
+	font-size:10px;
+	color:#FF3F3F;
+	}
+span.sNerro {float:left; width:100%;}
+.sNcaptcha span {
+	display:block;
+	margin-top:5px;
+	}
+.enviarNome {
+	margin-bottom:10px;
+	}
+	
+.enviarEmail {
+	margin-bottom:25px;
+	}
+
+label.sNrestam {
+	width:263px; 
+	float:left;
+	text-align:right;
+	padding-top:4px;
+	padding-right:2px;
+	}
+input.sNrestam {
+	width:40px; 
+	background:#E7E7E7;
+	color:#A1A1A1;
+	margin-bottom:8px;
+	}
+.corpoEnviar textarea {
+	border:1px solid #CACACA;
+	width:303px;
+	height:60px;
+	padding:5px;
+	color:#CACACA;
+	font-style:italic;
+	font-size:12px;
+	margin-bottom:5px;
+	}
+.enviarBotao {
+	clear:both;
+	border-top:1px solid #ccc;
+	padding-top:10px;
+	text-align:center;
+	}
+.corpoEnviar input.sNbotaoenviar {
+	width:157px; 
+	height:34px;
+	background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/bt-enviar.jpg) top left no-repeat;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+	font-family:arial;
+	text-transform:uppercase;
+	border:0;
+	cursor:pointer;
+	}
+
+.sNenviada {font-size:20px; font-weight:bold; font-family:arial; color:#000; padding-left:70px; background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/ico-enviado.png) top left no-repeat; padding:5px 0 5px 90px; margin-top:20px;}
+.sNmaisamigos {color:#000; text-align:right; padding-top:10px; padding-right:95px; font-size:11px;}
+.sNmaisamigos a {text-decoration:underline; color:#000;}
+
+/* --- */
+.sNtooltip {
+  position:relative; 
+  font:12px arial, verdana, helvetica, sans-serif; 
+  padding:0;
+  color:#333;
+  text-decoration:none;
+  z-index:24;
+  display:block;
+  width:100%;
+  }
+  .sNtooltip:hover{
+  z-index:25; 
+  }
+  .sNtooltip strong{display: none}
+  .sNtooltip:hover strong{ 
+  display:block;
+  position:absolute;
+  width:113px; 
+  height:28px;
+  top:-36px;
+  font-weight:normal;
+  left:-35px;
+  font-size:11px; 
+  padding:7px 5px 0 5px;
+  text-align:center;
+  background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/bg-tooltip-a.png) top left no-repeat;
+  color:#333;
+  text-indent:0;
+  }
+  
+  .sNtooltip:hover strong.tt1 {
+	background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/bg-tooltip-b.png) top left no-repeat;
+	top:-5px;
+	left:-66px;
+	width:53px; 
+	height:21px;
+	padding-right:8px;
+	padding-left:2px;
+	}
+  .sNtooltip:hover strong.tt2 {
+	background:url(https://web.archive.org/web/20140602131328im_/http://www.clicrbs.com.br/icon/bg-tooltip-c.png) top left no-repeat;
+	left:-95px;
+	top:-47px;
+	height:40px;
+	padding:7px 8px 0;
+	text-align:left;
+	}
+
+/* --- */
+.sNpublicidade {
+	position: absolute;
+	left: 5px; top: 5px;
+}
+	
+#socialNetworks .iframe {text-align:center; margin:0;}
+
+/*
+     FILE ARCHIVED ON 13:13:28 Jun 02, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:52:50 Dec 12, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.datanode: 108.602 (5)
+  PetaboxLoader3.resolve: 203.549 (3)
+  exclusion.robots: 0.168
+  LoadShardBlock: 121.557 (3)
+  load_resource: 248.031
+  captures_list: 149.522
+  CDXLines.iter: 15.831 (3)
+  RedisCDXSource: 4.583
+  esindex: 0.011
+  exclusion.robots.policy: 0.154
+*/

@@ -1,0 +1,176 @@
+.blocoOfertas {
+	background:#FFF;
+	border:1px solid #CCCCCC;
+	clear:both;
+	float:left;
+	font-family:arial !important;
+	margin:18px 0;
+	padding:0 5% 45px 5%;
+	position:relative;
+	width:90%;
+	line-height:1.7em;
+}
+.blocoOfertas a {
+	color:#3f3f3f;
+}
+.blocoOfertas .topoOfertas {
+	clear:both;
+	float:left;
+	width:100%;
+}
+.blocoOfertas span.melhoresOfertas {
+	color:#666666;
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+	line-height:1em;
+	padding:15px 0 0 0;
+	text-align:left;
+	width:100%;
+}
+.blocoOfertas span.logoOfertas a {
+	background:transparent url(/web/20140602131329im_/http://www.clicrbs.com.br/icon/logoEuComparo03.gif) no-repeat left bottom;
+	display:block;
+	height:35px;
+	float:right;
+	text-indent:-9999px;
+	width:89px;
+}
+.blocoOfertas .buscaOfertas {
+	background:#9B151E none;
+	bottom:0;
+	height:46px;
+	left:0;
+	line-height:46px;
+	overflow:hidden;
+	position:absolute;
+	width:100%
+}
+.blocoOfertas table {
+	margin:0;
+	padding:0;
+	border-spacing:0;
+	border-collapse:collapse;
+}
+.blocoOfertas fieldset {
+	border:0;
+	display:block;
+	margin:0;
+	padding:0;
+}
+.blocoOfertas .buscaOfertas legend {display:none;}
+.blocoOfertas .buscaOfertas label {display:none;}
+.blocoOfertas .buscaOfertas input.compareOfertas {
+	background:#FFF;
+	border:0;
+	color:#333;
+	display:block;
+	font-size:12px;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 6px;
+	width:100%;
+	
+	position:absolute;
+	top:50%;
+	margin-top:-12px;
+	left:14px;
+	z-index:1;
+}
+.blocoOfertas .buscaOfertas input.botaoBuscarOfertas {
+	background:#9B151E none;
+	border:0;
+	color:#FFF;
+	cursor:pointer;
+	float:right;
+	font-family: arial;
+	font-size: 13px;
+	font-weight: 700;
+	height:46px;
+	margin:0;
+	padding:0 10px 0 10px;
+	*padding:0 5px 0 5px;
+	position:relative;
+	z-index:2;
+}
+.blocoOfertas .listaOfertas {
+	clear:both;
+	float:left;
+	padding:0 5%;
+	width:90%;
+}
+.blocoOfertas .listaOfertas a span {
+	line-height:1.3em;
+}
+.blocoOfertas .listaOfertas a span.lojaOfertas {
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:normal
+}
+.blocoOfertas .listaOfertas a span.produtoOfertas {
+	color:#666666;
+	display:block;
+	font-size:13px;
+	/*padding-bottom:2px;*/
+	font-weight:700
+}
+.blocoOfertas .listaOfertas a span.precoOfertas, .blocoOfertas .listaOfertas a span.textoExtraOfertas {
+	color:#9A141E;
+	display:block;
+	font-size:13px;
+	font-weight:700
+}
+.blocoOfertas .listaOfertas a span.precoOfertas {
+	font-weight:700;
+}
+.blocoOfertas .listaOfertas a img {
+	float:none;
+}
+.blocoOfertas .listaOfertas .imagemOferta {
+	text-align:center;
+}
+.blocoOfertas ul {
+	margin:0;
+	padding:0;
+}
+.blocoOfertas ul li {
+	border-top:1px solid #d1d1d1;
+	display:block;
+	float:left;
+	clear:both;
+	padding:10px 0 15px 0;
+	margin:0 !important;
+	text-align:center;
+	width:100%;
+}
+.blocoOfertas ul :first-child,
+.blocoOfertas .destaque + li {
+	border-top:0;
+}
+.blocoOfertas ul li span {
+	text-align:center;
+}
+
+/*
+     FILE ARCHIVED ON 13:13:29 Jun 02, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:52:18 Dec 12, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 114.819 (3)
+  exclusion.robots: 0.159
+  exclusion.robots.policy: 0.149
+  load_resource: 184.368
+  PetaboxLoader3.resolve: 125.791 (3)
+  RedisCDXSource: 0.568
+  PetaboxLoader3.datanode: 126.952 (5)
+  captures_list: 318.904
+  esindex: 0.011
+  CDXLines.iter: 39.599 (3)
+*/

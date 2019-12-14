@@ -1,0 +1,213 @@
+body {
+	margin: 32px 0 0 !important;
+	padding:0;
+}
+
+/** resets **/
+#clic-barra-2010 a,
+#clic-barra-2010 fieldset, 
+#clic-barra-2010 form, 
+#clic-barra-2010 input, 
+#clic-barra-2010 label, 
+#clic-barra-2010 legend, 
+#clic-barra-2010 li, 
+#clic-barra-2010 select, 
+#clic-barra-2010 span, 
+#clic-barra-2010 ul {
+	font-size: 11px;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	background:transparent;
+	border:0 solid;
+	margin:0;
+	outline:none;
+	padding:0;
+	vertical-align:baseline;
+}
+
+/** estilos clic-barra-2010 **/
+#clic-barra-2010 a, #clic-barra-2010 a:link {
+	text-decoration:none;
+	font-weight:normal;
+}
+div#clic-barra-2010 {
+	background: #333333;
+	z-index: 10000;
+	width: 100% !important;
+	position: absolute !important;
+	left:0 !important;
+	top:0 !important;
+}
+div#clic-barra-2010 .clic-barra-inner {
+	background: #333333;
+	width: 999px;
+	min-height: 32px;
+	height:auto!important;
+	height: 32px;
+	z-index: 10000;
+	position: relative;
+}
+div#clic-barra-2010 .aligncenter {margin: 0 auto;}
+div#clic-barra-2010 a, div#clic-barra-2010 a span {color:#FFF;}
+div#clic-barra-2010 a.clicBarra-logo-clic {
+	background:transparent url(/web/20140126073241im_/http://www.clicrbs.com.br/icon/clicbarra-logo.jpg) no-repeat left bottom;
+	border-right: 1px solid #ebeade;
+	display:block;
+	float:left;
+	height:32px;
+	width:100px;
+	text-indent:-9999px;
+}
+
+/** estilos ul.links **/
+div#clic-barra-2010 ul.links {
+	display:block;
+	float:left;
+	overflow:hidden;
+	padding-left:20px;
+	width:500px !important;
+}
+
+/* float fix for ie6 */
+div#clic-barra-2010 ul.links li{_width: 1%; white-space: nowrap}
+div#clic-barra-2010 ul.links li ul li {width: auto;}
+/* /float fix */
+
+div#clic-barra-2010 ul.links li a, div#clic-barra-2010 ul.links li a span{height: 32px; line-height: 32px;}
+div#clic-barra-2010 ul.links li ul li a {height: auto; line-height: normal;}
+div#clic-barra-2010 ul {clear: none;}
+div#clic-barra-2010 ul li {
+	background: transparent url(/web/20140126073241im_/http://www.clicrbs.com.br/icon/clicbarra-separador-menu.gif) no-repeat right 10px;
+	display: block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+div#clic-barra-2010 ul li.hagah {background: none;}
+div#clic-barra-2010 ul li a {
+	display:block;
+	padding: 0 15px;
+}
+div#clic-barra-2010 ul li a span {}
+div#clic-barra-2010 ul li a:hover, div#clic-barra-2010 ul li a:hover span,
+div#clic-barra-2010 ul li.ativo a, div#clic-barra-2010 ul li.ativo a span {
+	background: #fff; *background: #fefefe;
+	color: #000;
+}
+div#clic-barra-2010 ul li.expande a span {background: transparent url(/web/20140126073241im_/http://www.clicrbs.com.br/icon/clicbarra-seta-baixo.gif) no-repeat right 5px; padding-right: 20px}
+div#clic-barra-2010 ul li.expande a:hover span, div#clic-barra-2010 ul li.ativo a span {background: #fff url(/web/20140126073241im_/http://www.clicrbs.com.br/icon/clicbarra-seta-cima.gif) no-repeat right 5px;}
+div#clic-barra-2010 ul li.hagah a {}
+div#clic-barra-2010 ul li.hagah a:hover {background:#9ab540; color:#fff;}
+
+/** estilos lista expandida **/
+div#clic-barra-2010 ul li.expande div.lista {
+	background: #fff url(/web/20140126073241im_/http://www.clicrbs.com.br/icon/clicbarra-separador-lista.gif) repeat-y 147px bottom;
+	border: 1px solid #d9d9d9;
+	border-top: none;
+	left: 30px;
+	position: absolute;
+	width: 592px;
+	text-align:left;
+}
+div#clic-barra-2010 ul li.expande div.lista ul {
+	display:block;
+	float:left;
+	overflow:hidden;
+	padding: 8px 10px 15px 0;
+	width: 138px;
+}
+div#clic-barra-2010 ul li.expande div.lista ul.ultima {background: none;}
+div#clic-barra-2010 ul li.expande div.lista ul li {
+	background: none;
+	float:none;
+	list-style:none;
+	list-style-position:outside;
+	padding: 0 0 0 10px;
+	white-space: normal;
+}
+div#clic-barra-2010 ul li.expande div.lista ul li a {
+	color: #000;
+	background: none;
+	display: inline;
+	font-size:1em;
+	font-weight:normal!important;
+	padding:3px;
+	line-height: 19px;
+	border: none;
+}
+div#clic-barra-2010 ul li.expande div.lista ul li a:hover {
+	background:#333;
+	color: #ffcc00;
+}
+
+/** estilos clic-barra-busca **/
+div#clic-barra-2010 div.clic-barra-busca {
+	background:#4e4e4e url(/web/20140126073241im_/http://www.clicrbs.com.br/icon/clicbarra-bg-busca.gif) repeat-x 0 0;
+	border:1px solid #696969;
+	border-width: 0 1px;
+	height: 32px;
+	float: right;
+	width: 370px;
+}
+div#clic-barra-2010 div.clic-barra-busca legend {display:none}
+div#clic-barra-2010 div.clic-barra-busca fieldset {}
+div#clic-barra-2010 div.clic-barra-busca ul li {
+	background:none;
+	display:block;
+	float:left;
+	padding-top:7px
+}
+div#clic-barra-2010 div.clic-barra-busca ul li.busca {padding-left: 5px; width:160px;}
+div#clic-barra-2010 div.clic-barra-busca ul li.buscar {padding-left:5px}
+div#clic-barra-2010 div.clic-barra-busca ul li label {
+	color:#fff;
+	display:block;
+	float:left;
+	padding:3px 3px 0 0
+}
+div#clic-barra-2010 div.clic-barra-busca ul li input, div#clic-barra-2010 div.clic-barra-busca ul li select {
+	background:#FFF;
+	border: 1px solid #7f9aaf;
+	font-size:1.1em;
+	height: 15px;
+	width:110px;
+}
+div#clic-barra-2010 div.clic-barra-busca ul li input {
+	padding-top:1px
+}
+div#clic-barra-2010 div.clic-barra-busca ul li select {
+	height: 19px;
+	width: 140px
+}
+div#clic-barra-2010 div.clic-barra-busca ul li.buscar input {
+	background: transparent url(/web/20140126073241im_/http://www.clicrbs.com.br/icon/clicbarra-botao-ok.jpg) no-repeat center center;
+	border:0;
+	display:block;
+	float:left;
+	height:20px;
+	text-indent:-9999px;
+	width:30px;
+	cursor: pointer;
+	font-size: 0;
+}
+
+/*
+     FILE ARCHIVED ON 07:32:41 Jan 26, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:52:24 Dec 12, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 133.161 (3)
+  esindex: 0.02
+  CDXLines.iter: 40.697 (3)
+  load_resource: 131.23
+  captures_list: 567.552
+  LoadShardBlock: 87.435 (3)
+  exclusion.robots.policy: 0.123
+  exclusion.robots: 0.136
+  PetaboxLoader3.datanode: 57.731 (5)
+  RedisCDXSource: 24.462
+*/
