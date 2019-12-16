@@ -258,3 +258,19 @@ menu{
 	width:88px;
 }
 
+label {
+    display: block;
+    font-family: SourceSansPro-SemiBold;
+}
+
+input {
+    border: 1px solid 
+    #bcbcbc;
+    width: 428px;
+    height: 44px;
+	margin-top: 5px;
+	margin-bottom: 17px;
+	padding-left: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
