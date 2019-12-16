@@ -23,6 +23,9 @@
 	src: url(./fonts/SourceSansPro-Light.otf);
 }
 
+html { font-family: SourceSansPro-Black; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
 a.skip-main {
     left:-999px;
     position:absolute;
